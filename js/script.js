@@ -16,7 +16,9 @@ function cf() {
         celsius.innerHTML = `${c.toFixed(1)}°`;
         fahrenheit.innerHTML = `${f.toFixed(1)}°`;
     } else {
-        alert("Por favor, insira um número válido.");
+        let alert = document.querySelector(".alerta");
+        alert.innerHTML = "Por favor, insira um número válido.";
+        
     }
     
 }
@@ -34,12 +36,16 @@ function fc() {
         celsius.innerHTML = `${f.toFixed(1)}°`;
         fahrenheit.innerHTML = `${c.toFixed(1)}°`;
     } else {
-        alert("Por favor, insira um número válido.");
+        let alert = document.querySelector(".alerta");
+        alert.innerHTML = "Por favor, insira um número válido.";
     }
-        
+    
 }
 
 function clearInput() {
     const input = document.getElementById("graus");
     input.value = "";
+    let alert = document.querySelector(".alerta");
+    alert.innerHTML = " ";
+    
 }
