@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conversosr de temperatura por André Lima">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Conversor de Temperatura</title>
 </head>
@@ -13,15 +14,15 @@
             <h1>Conversor de temperatura</h1>
             <div class="converter-container">
                 <h2>Temperatura</h2>
-                <input type="text" class="graus">
+                <input onclick="clearInput()" placeholder="0.0" id="graus" required>
                 <div class="display-container">
                     <div class="display-left">
                         <label class="temp1">Celsius</label>
-                        <p class="celsius">00.0</p>
+                        <p class="celsius">00.0°</p>
                     </div>
                     <div class="display-right">
                         <label class="temp2">Fahrenheit</label>
-                        <p class="fahrenheit">00.0</p>
+                        <p class="fahrenheit">00.0°</p>
                     </div>
                 </div>
                 <div class="buttons-container">
@@ -30,6 +31,7 @@
                 </div>
             </div>
         </div>
+        <span>Conversor de temperatura &copy; 2023 by André Lima</span>
     </main>
 </body>
 <script src="js/script.js"></script>
