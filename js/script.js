@@ -13,8 +13,8 @@ function cf() {
         f = (c * 1.8) + 32;
         temp1.innerHTML = "Celsius";
         temp2.innerHTML = "Fahrenheit";
-        celsius.innerHTML = `${c.toFixed(1)}°`;
-        fahrenheit.innerHTML = `${f.toFixed(1)}°`;
+        celsius.innerHTML = `${c.toFixed(1).replace('.', ',')}°`;
+        fahrenheit.innerHTML = `${f.toFixed(1).replace('.', ',')}°`;
     } else {
         let alert = document.querySelector(".alerta");
         alert.innerHTML = "Por favor, insira um número válido.";
@@ -33,8 +33,8 @@ function fc() {
         c = (f - 32) / 1.8;
         temp1.innerHTML = "Fahrenheit";
         temp2.innerHTML = "Celsius";
-        celsius.innerHTML = `${f.toFixed(1)}°`;
-        fahrenheit.innerHTML = `${c.toFixed(1)}°`;
+        celsius.innerHTML = `${f.toFixed(1).replace('.', ',')}°`;
+        fahrenheit.innerHTML = `${c.toFixed(1).replace('.', ',')}°`;
     } else {
         let alert = document.querySelector(".alerta");
         alert.innerHTML = "Por favor, insira um número válido.";
@@ -47,5 +47,7 @@ function clearInput() {
     input.value = "";
     let alert = document.querySelector(".alerta");
     alert.innerHTML = " ";
+    celsius.innerHTML = "00,0°";
+    fahrenheit.innerHTML = "00,0°";
     
 }
